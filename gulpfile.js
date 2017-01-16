@@ -20,7 +20,7 @@ gulp.task('default', function () {
                 'bb >= 10'
             ]
         }))
-        // .pipe( cssnano() ) 
+        .pipe( cssnano() ) 
         .pipe( rename( {suffix: '.min'} ) )
         .pipe( gulp.dest('dist') ); 
 });

@@ -1,8 +1,8 @@
 {
   "name": "fleyout",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A easy, declarative, compatible CSS flexbox layout",
-  "main": "css/fleyout.min.css",
+  "main": "dist/fleyout.min.css",
   "scripts": {
     "build": "gulp",
     "watch": "gulp watch"
