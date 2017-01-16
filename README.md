@@ -6,6 +6,11 @@ Fleyout is a easy, declarative, compatible CSS flexbox layout.
 - **Declaravtive** - Semantic syntax makes you understand what happened 
 - **Compatible** - Supported old version flexbox, it is compatible with many old browser include `<Android 4.4`
 
+## Install
+
+```
+npm install fleyout 
+```
 
 ## Basic example
 
@@ -22,7 +27,7 @@ using `layout` in parent container, using `flex` in child.
 
 
 ### layout  
-`layout` can contain multi values.
+`layout` can contain multiple values. 
 
 value | meaning
 ----- |  ------
