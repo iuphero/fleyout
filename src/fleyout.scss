@@ -1,0 +1,55 @@
+[layout] {
+    display: flex;
+    &>* {
+        display: block;
+    }
+}
+
+[layout~="inline"] {
+    display: inline-flex;
+}
+
+[layout~='row'] {
+    flex-direction: row;    
+}
+
+[layout~="col"] {
+    flex-direction: column;
+}
+
+[layout~='rows'] {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+[layout~='cols'] {
+    flex-direction: col;
+    flex-wrap: wrap;
+}
+
+$mainMarks: (start: flex-start, end: flex-end, center: center, between: space-between, around: space-around);
+$crossMarks: (start: flex-start, end: flex-end, center: center, baseline: baseline, stretch: stretch);
+
+//for usage like <div layout="row start-end">
+@each $mainLabel, $mainVal in $mainMarks {
+    @each $crossLabel, $crossVal in $crossMarks {
+        $placeHolder: #{$mainLabel}-#{$crossLabel};
+        [layout~="#{$placeHolder}"] {
+            justify-content: $mainVal;
+            align-items: $crossVal;
+        }
+    }
+}
+
+//for usage like <div flex="1">, <div flex="2">
+[flex] {
+    width: 0;
+    flex-grow: 1;
+}
+
+@for $i from 0 through 12 {
+    [flex="#{$i}"] {
+        flex-grow: $i;
+    }
+}
+
