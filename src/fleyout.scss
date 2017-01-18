@@ -1,5 +1,5 @@
 [layout] {
-    display: flex;
+    display: flex !important;
     &>* {
         display: block;
     }
