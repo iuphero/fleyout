@@ -36,8 +36,7 @@ value | meaning
 `rows`| `flex-direction: row` and `flex-wrap: wrap` 
 `cols`| `flex-direction: col` and `flex-wrap: wrap` 
 `inline` | `display: inline-flex` 
-`start-end` and so on. Format is `mainAxis-crossAxis`  | Main axis(justify-content) is flex-start , cross axis(align-items) is end. Main axis placeholder can be `start`, `end`, `center`, `around`, `between`, cross axis placeholder can be `start`, `end`, 
-`center`, `baseline`, `stretch`. 
+`start-end` and so on. Format is `mainAxis-crossAxis`  | Main axis(justify-content) is flex-start , cross axis(align-items) is end. Main axis placeholder can be `start`, `end`, `center`, `around`, `between`, cross axis placeholder can be `start`, `end`, `center`, `baseline`, `stretch`. 
 
 
 Example:  
