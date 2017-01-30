@@ -1,6 +1,6 @@
 {
   "name": "fleyout",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A easy, declarative, compatible CSS flexbox layout",
   "main": "dist/fleyout.min.css",
   "scripts": {

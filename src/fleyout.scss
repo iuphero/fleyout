@@ -15,6 +15,9 @@
 
 [layout~="col"] {
     flex-direction: column;
+    & > [flex] {
+        width: 100%;
+    }
 }
 
 [layout~='rows'] {
