@@ -46,7 +46,6 @@ $crossMarks: (start: flex-start, end: flex-end, center: center, baseline: baseli
 
 //for usage like <div flex="1">, <div flex="2">
 [flex] {
-    width: 0;
     flex-grow: 1;
 }
 
